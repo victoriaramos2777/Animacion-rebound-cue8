@@ -24,66 +24,61 @@
             height: 50%;
             transition: 2s;
             transform: translate(-25deg);
-            //animation-name: detener;
-            //animation-duration: 4s;
-            // animation-iteration-count: infinite;
-          
+            animation-name: animacion;
+            animation-duration: 4s;
+             animation-iteration-count: infinite;
+             transition-delay: 1s;         
            
             &__img2 {  
                float: right;
                width: 40%;
                height: 40%;
-               transition: 2s;
+               transition: 4s;
                transform: translate(-25deg);
                 animation-name: movimiento;
                 animation-duration: 4s;
                 animation-iteration-count: infinite;
+              
                 //transition-property: height;
-               // transition-duration: 4s;
-                 //transition-timing-function: ease-in-out;
+               transition-duration: 4s;
+                 transition-timing-function: ease-in-out;
             }
 
             &__img2:hover {
-                transform: translate(-150px, opx);
-                
+                transform: translate(-500px,0px);
+            
             }
 
             &__img2:active {
-                transform: translate(90deg);
+                transform: translate(-90deg);
             }
 
             }
 
             &__img:hover {
-                transform: translate(-200px, 0px);
+                transform: translate(-500px, -60px);
                 
             }
 
             &__img:active {
-                transform: translate(100deg,);
+                transform: translate(-100deg,);
             }
         }
 
     }
 
     @keyframes movimiento {
-             0%{
-                transform: rotate(11deg) 
-             }
-
-             25% {
-                transform: rotate(-11deg)
-                
-             }
-             50% {
-                transform:translate(-50px) 
-             }
-             75% {
-                width:40px; margin-right:10%;
-             }
-        }
-
-
-
+        100%{
+            transform:translateX(-500px) rotate(10deg )
+            
+         }
+            }
     
 
+ @keyframes animacion {
+             100%{
+                transform:translateX(-550px) rotate(10deg)
+             }
+             
+            
+            }
