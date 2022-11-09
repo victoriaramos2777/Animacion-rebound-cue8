@@ -22,21 +22,68 @@
         &__img {
             width: 40%;
             height: 50%;
-
+            transition: 2s;
+            transform: translate(-25deg);
+            //animation-name: detener;
+            //animation-duration: 4s;
+            // animation-iteration-count: infinite;
+          
+           
             &__img2 {  
                float: right;
                width: 40%;
                height: 40%;
+               transition: 2s;
+               transform: translate(-25deg);
                 animation-name: movimiento;
-                animation-duration: 2s;
+                animation-duration: 4s;
                 animation-iteration-count: infinite;
+                //transition-property: height;
+               // transition-duration: 4s;
+                 //transition-timing-function: ease-in-out;
             }
 
+            &__img2:hover {
+                transform: translate(-150px, opx);
+                
+            }
+
+            &__img2:active {
+                transform: translate(90deg);
+            }
+
+            }
+
+            &__img:hover {
+                transform: translate(-200px, 0px);
+                
+            }
+
+            &__img:active {
+                transform: translate(100deg,);
             }
         }
 
     }
 
     @keyframes movimiento {
-            
-    }
+             0%{
+                transform: rotate(11deg) 
+             }
+
+             25% {
+                transform: rotate(-11deg)
+                
+             }
+             50% {
+                transform:translate(-50px) 
+             }
+             75% {
+                width:40px; margin-right:10%;
+             }
+        }
+
+
+
+    
+

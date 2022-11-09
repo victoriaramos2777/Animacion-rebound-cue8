@@ -17,16 +17,46 @@
 .container__item__img {
   width: 40%;
   height: 50%;
+  transition: 2s;
+  transform: translate(-25deg);
 }
 .container__item__img__img2 {
   float: right;
   width: 40%;
   height: 40%;
+  transition: 2s;
+  transform: translate(-25deg);
   animation-name: movimiento;
-  animation-duration: 2s;
+  animation-duration: 4s;
   animation-iteration-count: infinite;
 }
+.container__item__img__img2:hover {
+  transform: translate(-150px, opx);
+}
+.container__item__img__img2:active {
+  transform: translate(90deg);
+}
+.container__item__img:hover {
+  transform: translate(-200px, 0px);
+}
+.container__item__img:active {
+  transform: translate(100deg);
+}
 
-@keyframes movimiento {}
+@keyframes movimiento {
+  0% {
+    transform: rotate(11deg);
+  }
+  25% {
+    transform: rotate(-11deg);
+  }
+  50% {
+    transform: translate(-50px);
+  }
+  75% {
+    width: 40px;
+    margin-right: 10%;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
