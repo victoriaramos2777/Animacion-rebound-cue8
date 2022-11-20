@@ -7,10 +7,9 @@
   width: 100%;
   height: 600px;
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: flex-end;
-  background-image: url(assets/img/cesped.jpeg);
+  background-image: url(./assets/img/fondo-nivel-juego-plataformas-elementos_107791-4702.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -19,28 +18,30 @@
   height: 50%;
   transition: 2s;
   transform: translate(-25deg);
+  transform: translateY(-30px);
   animation-name: animacion;
-  animation-duration: 4s;
+  animation-duration: 10s;
   animation-iteration-count: infinite;
   transition-delay: 1s;
 }
 .container__item__img__img2 {
-  float: right;
+  float: end;
   width: 40%;
   height: 40%;
   transition: 4s;
   transform: translate(-25deg);
   animation-name: movimiento;
-  animation-duration: 4s;
+  animation-duration: 10s;
   animation-iteration-count: infinite;
   transition-duration: 4s;
   transition-timing-function: ease-in-out;
 }
 .container__item__img__img2:hover {
   transform: translate(-500px, 0px);
+  transition-duration: 10s;
 }
 .container__item__img__img2:active {
-  transform: translate(-90deg);
+  transition-delay: 2s;
 }
 .container__item__img:hover {
   transform: translate(-500px, -60px);
@@ -50,13 +51,49 @@
 }
 
 @keyframes movimiento {
+  0% {
+    transform: translatey(-50px);
+  }
+  10% {
+    transform: translatey(2px) rotatey(160deg);
+  }
+  20% {
+    transform: translatey(-50px);
+  }
+  30% {
+    transform: translatex(100px) scale(100deg);
+  }
+  40% {
+    transform: translateY(100px);
+  }
+  50% {
+    transform: translatex(-500px) rotate(3deg);
+  }
+  75% {
+    transform: translateY(150px);
+  }
   100% {
-    transform: translateX(-500px) rotate(10deg);
+    transform: translatex(-900px);
   }
 }
 @keyframes animacion {
+  0% {
+    transform: translatey(30px);
+  }
+  15% {
+    transform: translatey(-2px);
+  }
+  25% {
+    transform: translatex(-100px);
+  }
+  50% {
+    transform: translateY(-100px);
+  }
+  70% {
+    transform: transition(40px);
+  }
   100% {
-    transform: translateX(-550px) rotate(10deg);
+    transform: translateX(-550px);
   }
 }
 
